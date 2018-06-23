@@ -32,14 +32,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let movie of movies; let i = index">
+                    <tr *ngFor="let movie of movies| productFilter:filterMovie    let i = index">
                         <td>
                             <img [src]="movie.imageUrl"  *ngIf="showImage"/>
                         </td>
-                        <td [attr.data-index]="i">{{movie.name | uppercase}}</td>
-                        <td>{{movie.language | lowercase}}</td>
-                        <td>{{movie.rate}}</td>
-                        <td>{{movie.profit| currency:"EUR"}}</td>
+                        <td [attr.data-index]="i">{{movie.name | valueUpper:"upper"}}</td>
+                        <td>{{movie.language | valueUpper:"lower"}}</td>
+                        <td><star-comp [rating]="movie.rate"></star-comp></td>
+                        <td [ngStyle]="{'color':movie.profit<10000?'red':'green'}">{{movie.profit| addValue | currency:"EUR"  }}</td>
                     </tr>
                 </tbody>
             </table>

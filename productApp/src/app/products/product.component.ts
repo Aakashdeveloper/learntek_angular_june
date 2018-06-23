@@ -15,8 +15,8 @@ export class ProductComponent{
             _id: "5ab12612f36d2879268f284a",
             name: "Black Panther",
             language: "ENGLISH",
-            rate: 4.5,
-            profit:10000,
+            rate: 4.8,
+            profit:8000,
             type: "Action Adventure Fantasy",
             imageUrl: "https://image.ibb.co/f0hhZc/bp.jpg"
         },
@@ -25,8 +25,8 @@ export class ProductComponent{
             name: "Death Wish",
             language: "ENGLISH",
             type: "Action Crime Thriller",
-            rate: 3.2,
-            profit:98000,
+            rate: 2.4,
+            profit:10000,
             imageUrl: "https://image.ibb.co/gC9PfH/dw.jpg"
         },
         {

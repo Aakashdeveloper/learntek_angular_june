@@ -5,6 +5,10 @@ import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component'
 import { BookComponent } from './book.component'
 import { ProductComponent } from "./products/product.component";
+import { valueUpper } from "./products/product.pipe";
+import { AddValue } from "./products/paddValue.pipe";
+import { ProductFilter } from "./products/productFilter.pipe";
+import { StarComponent } from "./shared/star.component";
 
 @NgModule({
     //Module will come here
@@ -16,7 +20,11 @@ import { ProductComponent } from "./products/product.component";
     declarations:[
         AppComponent,
         BookComponent,
-        ProductComponent
+        ProductComponent,
+        valueUpper,
+        AddValue,
+        ProductFilter,
+        StarComponent
     ],
     //FirstComponent 
     bootstrap:[
